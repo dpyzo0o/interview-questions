@@ -1,0 +1,22 @@
+{
+  "name": "interview-questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "keywords": [],
+  "author": "dpyzo0o",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/parser": "^7.12.11",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/traverse": "^7.12.10",
+    "express": "^4.17.1"
+  }
+}
