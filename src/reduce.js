@@ -1,6 +1,6 @@
 Array.prototype.myReduce = function (callback, initialValue) {
   const array = this;
-  const hasInitialValue = initialValue == null;
+  const hasInitialValue = initialValue != null;
   let res = hasInitialValue ? initialValue : array[0];
 
   for (let i = hasInitialValue ? 0 : 1; i < array.length; i++) {
