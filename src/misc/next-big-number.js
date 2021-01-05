@@ -27,7 +27,7 @@ function findNextBigNumber(num) {
     }
   }
 
-  return nums.map(n => n.toString()).join('');
+  return nums.join('');
 }
 
 console.log(findNextBigNumber(1234));
