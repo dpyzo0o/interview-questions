@@ -14,9 +14,13 @@ function findNextBigNumber(num) {
     }
   }
 
+  if (cursor === undefined) {
+    return -1;
+  }
+
   for (let i = cursor + 1; i < nums.length; i++) {
     if (nums[i] > nums[cursor]) {
-      if (i === nums.length - 1 || nums[i + 1] < nums[cursor]) {
+      if (i === nums.length - 1 || nums[i + 1] <= nums[cursor]) {
         let temp = nums.splice(cursor, i - cursor);
         if (typeof temp === 'number') {
           temp = [temp];
@@ -27,7 +31,7 @@ function findNextBigNumber(num) {
     }
   }
 
-  return nums.join('');
+  return parseInt(nums.join(''));
 }
 
-console.log(findNextBigNumber(1234));
+console.log(findNextBigNumber(1222233332));
